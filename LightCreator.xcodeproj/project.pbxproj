@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2B34473B2BD1646300C70B7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B34473A2BD1646300C70B7E /* main.cpp */; };
+		2B34474C2BD164A700C70B7E /* BaseConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447412BD164A700C70B7E /* BaseConfiguration.cpp */; };
+		2B34474D2BD164A700C70B7E /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447432BD164A700C70B7E /* buffer.cpp */; };
+		2B34474E2BD164A700C70B7E /* mapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447462BD164A700C70B7E /* mapfile.cpp */; };
+		2B34474F2BD164A700C70B7E /* timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447492BD164A700C70B7E /* timeutil.cpp */; };
+		2B3447522BD164F400C70B7E /* LightValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447502BD164F400C70B7E /* LightValue.cpp */; };
+		2B3447562BD169C200C70B7E /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B3447542BD169C200C70B7E /* Configuration.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,21 @@
 /* Begin PBXFileReference section */
 		2B3447372BD1646300C70B7E /* LightCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LightCreator; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B34473A2BD1646300C70B7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2B3447412BD164A700C70B7E /* BaseConfiguration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseConfiguration.cpp; sourceTree = "<group>"; };
+		2B3447422BD164A700C70B7E /* BaseConfiguration.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseConfiguration.hpp; sourceTree = "<group>"; };
+		2B3447432BD164A700C70B7E /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		2B3447442BD164A700C70B7E /* buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
+		2B3447452BD164A700C70B7E /* dbgutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbgutil.hpp; sourceTree = "<group>"; };
+		2B3447462BD164A700C70B7E /* mapfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfile.cpp; sourceTree = "<group>"; };
+		2B3447472BD164A700C70B7E /* mapfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapfile.hpp; sourceTree = "<group>"; };
+		2B3447482BD164A700C70B7E /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		2B3447492BD164A700C70B7E /* timeutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutil.cpp; sourceTree = "<group>"; };
+		2B34474A2BD164A700C70B7E /* timeutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timeutil.hpp; sourceTree = "<group>"; };
+		2B3447502BD164F400C70B7E /* LightValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LightValue.cpp; sourceTree = "<group>"; };
+		2B3447512BD164F400C70B7E /* LightValue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LightValue.hpp; sourceTree = "<group>"; };
+		2B3447532BD1655700C70B7E /* creation.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = creation.cfg; sourceTree = "<group>"; };
+		2B3447542BD169C200C70B7E /* Configuration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Configuration.cpp; sourceTree = "<group>"; };
+		2B3447552BD169C200C70B7E /* Configuration.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Configuration.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +62,7 @@
 		2B34472E2BD1646300C70B7E = {
 			isa = PBXGroup;
 			children = (
+				2B3447532BD1655700C70B7E /* creation.cfg */,
 				2B3447392BD1646300C70B7E /* LightCreator */,
 				2B3447382BD1646300C70B7E /* Products */,
 			);
@@ -57,9 +79,31 @@
 		2B3447392BD1646300C70B7E /* LightCreator */ = {
 			isa = PBXGroup;
 			children = (
+				2B34474B2BD164A700C70B7E /* utility */,
+				2B3447542BD169C200C70B7E /* Configuration.cpp */,
+				2B3447552BD169C200C70B7E /* Configuration.hpp */,
 				2B34473A2BD1646300C70B7E /* main.cpp */,
+				2B3447502BD164F400C70B7E /* LightValue.cpp */,
+				2B3447512BD164F400C70B7E /* LightValue.hpp */,
 			);
 			path = LightCreator;
+			sourceTree = "<group>";
+		};
+		2B34474B2BD164A700C70B7E /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				2B3447412BD164A700C70B7E /* BaseConfiguration.cpp */,
+				2B3447422BD164A700C70B7E /* BaseConfiguration.hpp */,
+				2B3447432BD164A700C70B7E /* buffer.cpp */,
+				2B3447442BD164A700C70B7E /* buffer.hpp */,
+				2B3447452BD164A700C70B7E /* dbgutil.hpp */,
+				2B3447462BD164A700C70B7E /* mapfile.cpp */,
+				2B3447472BD164A700C70B7E /* mapfile.hpp */,
+				2B3447482BD164A700C70B7E /* strutil.hpp */,
+				2B3447492BD164A700C70B7E /* timeutil.cpp */,
+				2B34474A2BD164A700C70B7E /* timeutil.hpp */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +134,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1530;
+				ORGANIZATIONNAME = "Robert Waller";
 				TargetAttributes = {
 					2B3447362BD1646300C70B7E = {
 						CreatedOnToolsVersion = 15.3;
@@ -119,7 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B34474F2BD164A700C70B7E /* timeutil.cpp in Sources */,
+				2B34474D2BD164A700C70B7E /* buffer.cpp in Sources */,
+				2B3447562BD169C200C70B7E /* Configuration.cpp in Sources */,
 				2B34473B2BD1646300C70B7E /* main.cpp in Sources */,
+				2B34474E2BD164A700C70B7E /* mapfile.cpp in Sources */,
+				2B3447522BD164F400C70B7E /* LightValue.cpp in Sources */,
+				2B34474C2BD164A700C70B7E /* BaseConfiguration.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +235,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/LightCreator;
 			};
 			name = Debug;
 		};
@@ -238,6 +290,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/LightCreator;
 			};
 			name = Release;
 		};
